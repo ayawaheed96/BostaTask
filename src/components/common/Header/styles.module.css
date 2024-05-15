@@ -1,0 +1,143 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    border-bottom: 1px solid #eeeded;
+}
+.mid,.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+        display: none;
+    } 
+}
+.container h6{
+    font-size: 18px;
+    font-weight: 500;
+    cursor:pointer;
+}
+.mid{width:35%;}
+.last{
+    width:25%;
+}
+.lang{
+    color:#E30613;
+    position: relative;
+}
+.followContainer{
+    position: absolute;
+    top: 52px;
+    width: 15rem;
+    border: 1px solid #eeeded;
+    border-radius:5px ;
+    padding: 1rem;
+    background-color: white;
+    z-index: 99;
+}
+.followPosLeft{left:300px}
+.followPosRight{right:170px}
+.followContainer>p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #cccccccc;
+}
+.searchBox{
+    display: flex;
+    width:98%;
+    height: 3rem;
+    margin: .5rem auto;
+    border: 1px solid #eeeded;
+    border-radius:5px ;
+    overflow: hidden;
+}
+.searchIcon{
+    width:3rem;
+    background-color: #E30613;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.input{
+    outline: none;
+    width: 10rem;
+    padding: 5px;
+}
+.relative{
+    position: relative;
+}
+.redText{
+    color: #E30613;
+    /* border: 1px solid #eeeded;
+    border-radius: 5px; */
+}
+.langContainer{
+    position: absolute;
+    top: 54px;
+    width: 10rem;
+    border: 1px solid #eeeded;
+    border-radius:5px ;
+    background-color: white;
+    z-index: 99;
+}
+.langPosLeft{
+    left: 36px;
+}
+.langPosRight{
+    right:36px;
+}
+.langContainer>p{
+    font-size: 14px;
+    font-weight: 600;
+    color: #cccccc;
+    cursor:pointer;
+    padding: .5rem;
+    margin: .5rem 0;
+}
+.langContainer>p:hover{
+    background-color: #eeeded;
+    color: #333;
+}
+.menu{
+    width:2rem;
+    height: 2rem;
+    display: none;
+    cursor:pointer; 
+
+    @media (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+.menu>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.headerContainer{
+    position: absolute;
+    top:51px;
+    width: 40%;
+    height: 50%;
+    padding: 1rem 2rem;
+    background-color: white;
+    z-index: 100;
+    border:1px solid #eeeded;
+    border-radius: 5px;
+}
+.headerPosLeft{left: 46px;}
+.headerPosRight{right:20px}
+.headerWrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.headerWrapper>h6{
+    padding: 1rem 0;
+    cursor:pointer;
+}
